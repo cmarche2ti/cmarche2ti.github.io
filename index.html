@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Awesome Website</title>
+</head>
+<body>
+
+    <style>
+        
+        img {
+            float: left;
+            margin: 1em;
+        }
+        .leftbox {
+            float: left;
+            width: 400px;
+        }
+        .rightbox {
+            float: right;
+            width: 400px;
+        }
+        ul{
+            clear: both;
+        }
+        #myHeader {
+            border: dotted 1px;
+            height: 40px;
+        }
+        #myHeader li {
+            background: purple;
+            display: inline;
+            padding: 4em;
+            text-align: center;
+        }
+        #todoList {
+            padding-top: 2em;
+        }
+        
+    
+    </style>
+    <header id='myHeader'>
+        <ul>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Privacy</li>
+        </ul>
+    </header>
+    <h1>Hi, I'm Chris This is My Website</h1>
+    
+    <img width='300' src="https://source.unsplash.com/random" alt="">
+    <div class="leftbox">
+        <h3>Professional Overview</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium error fugiat repellat voluptates dolore, mollitia, praesentium voluptate suscipit perferendis quidem distinctio repellendus vero impedit incidunt nesciunt nostrum? Temporibus, porro repellat.</p>
+    </div>
+    <div class="rightbox">
+        <h3>Hobbies</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deserunt labore. Sit dolorem nemo in sint repellat voluptate delectus dicta quisquam ratione illum aliquid, velit doloribus blanditiis officia tempore explicabo!</p>
+    </div>
+    <ul id="todoList">
+        <li>Yo</li>
+        <li>Yo</li>
+        <li>Yo</li>
+    </ul>
+    <script>
+        let todos = document.getElementById('todoList')
+        let moreTodos = ['Walk Chance', 'Feed Scout']
+        moreTodos.map(x => {
+            let newLi = document.createElement('li');
+            newLi.textContent = x;
+            todos.appendChild(newLi)
+        })
+    </script>
+</body>
+</html>
