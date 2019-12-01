@@ -1,0 +1,25 @@
+.jumbotron{
+    background-color: rgb(226, 229, 231);
+    background-image: url(67937.jpg);
+    color: white;
+}
+
+.col-md-2 {
+    text-align: right;
+}
+
+.navbar {
+    background-color: rgb(226, 229, 231);
+} 
+
+.container-fluid {
+    background-color: white;
+    color: black;
+}
+
+.list-group {
+    padding-top: 10px;
+}
+.row {
+    padding-top:15px;
+}
