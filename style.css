@@ -4,6 +4,9 @@
     color: white;
 }
 
+#bio-pic {
+    width: 200px;
+}
 .col-md-2 {
     text-align: right;
 }
